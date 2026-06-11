@@ -1,0 +1,48 @@
+# ─── Python ───
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# ─── Virtual Environment ───
+venv/
+.venv/
+env/
+ENV/
+
+# ─── Environment Variables (NEVER upload this) ───
+.env
+*.env
+
+# ─── Database & Vector Store (large, regenerated at runtime) ───
+chroma_db/
+vector_db/
+mongo_data/
+
+# ─── Uploaded Files ───
+data/
+
+# ─── Generated Reports ───
+report.pdf
+*.pdf
+
+# ─── Jupyter Notebooks Checkpoints ───
+.ipynb_checkpoints/
+*.ipynb
+
+# ─── OS Files ───
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── VS Code ───
+.vscode/
+*.code-workspace
+
+# ─── Logs ───
+*.log
+logs/
