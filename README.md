@@ -26,7 +26,7 @@ An AI-powered research assistant built with **FastAPI**, **LangGraph**, **RAG (H
 | Vector Store | ChromaDB |
 | Keyword Search | BM25 (rank-bm25) |
 | Database | MongoDB |
-| OCR | Tesseract + OCR.space API |
+| OCR | Tesseract + PyMuPDF |
 | Frontend | HTML, CSS, JavaScript |
 | Containerization | Docker + Docker Compose |
 
@@ -58,7 +58,7 @@ An AI-powered research assistant built with **FastAPI**, **LangGraph**, **RAG (H
 │       └── report_service.py # Report + PDF generation
 ├── frontend/
 │   └── index.html            # Frontend UI
-├── main.py                   # FastAPI entry point
+├── backend/main.py           # FastAPI entry point
 ├── Dockerfile
 ├── docker-compose.yml
 ├── requirements.txt
@@ -73,8 +73,8 @@ An AI-powered research assistant built with **FastAPI**, **LangGraph**, **RAG (H
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/YOUR_USERNAME/research-mind.git
-cd research-mind
+git clone https://github.com/sanjana-1109/ResearchMind.git
+cd ResearchMind
 ```
 
 **2. Set up environment variables**
@@ -90,8 +90,7 @@ docker-compose up --build
 
 | Service | URL |
 |---------|-----|
-| Frontend | http://localhost:3000 |
-| Backend API | http://localhost:8000 |
+| App + Frontend | http://localhost:8000 |
 | API Docs | http://localhost:8000/docs |
 
 ---
@@ -100,8 +99,8 @@ docker-compose up --build
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/YOUR_USERNAME/research-mind.git
-cd research-mind
+git clone https://github.com/sanjana-1109/ResearchMind.git
+cd ResearchMind
 ```
 
 **2. Create virtual environment**
@@ -130,12 +129,12 @@ brew services start mongodb-community  # Mac
 
 **6. Run the backend**
 ```bash
-uvicorn main:app --reload --port 8000
+uvicorn backend.main:app --reload --port 8000
 ```
 
-**7. Open the frontend**
+**7. Open the app**
 
-Open `frontend/index.html` in your browser.
+Visit `http://localhost:8000` in your browser.
 
 ---
 
@@ -146,7 +145,7 @@ Create a `.env` file based on `.env.example`:
 ```env
 GROQ_API_KEY=your_groq_api_key_here
 MONGO_URI=mongodb://localhost:27017/     # local
-# MONGO_URI=mongodb://mongo:27017/       # Docker
+# MONGO_URI=mongodb://research_mongo:27017/   # Docker
 ```
 
 Get a free Groq API key at [console.groq.com](https://console.groq.com)
@@ -169,4 +168,5 @@ Get a free Groq API key at [console.groq.com](https://console.groq.com)
 
 ## 👤 Author
 
-Made with ❤️ for the Autonomous Research Agent project.
+**Sanjana Savarkar**
+- GitHub: [@sanjana-1109](https://github.com/sanjana-1109)
