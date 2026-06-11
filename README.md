@@ -168,5 +168,5 @@ Get a free Groq API key at [console.groq.com](https://console.groq.com)
 
 ## 👤 Author
 
-**Sanjana Savarkar**
+**Sanjana Uparikar**
 - GitHub: [@sanjana-1109](https://github.com/sanjana-1109)
